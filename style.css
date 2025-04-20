@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(https://img.freepik.com/fotos-premium/mistura-de-fundo-gradiente-verde-e-laranja_7954-19915.jpg);
+    background-size: cover; /* Faz a imagem ocupar toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+header{
+    width: 200%;
+    height: 80px;
+    background-color: rgb(40, 201, 0);
+}
+/* Estilo da logo */
+.logo img {
+    max-height: 75px; /* Ajuste a altura da logo conforme necessário */
+    float: left;
+}
+#banner{
+    background-image: url(/img/banner.png);
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-size: contain; /* Ajusta a imagem para caber dentro da div sem cortar */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    overflow: hidden;
+    height: 500px;
+    width: 100%; /* Garante que a largura do banner ocupe toda a tela */;
+}
+ul{
+    list-style: none;
+    display: flex;
+    color: seagreen;
+    margin: 15px 50px;
+}
+ul li{
+    position: relative;
+    margin-top: 10px;
+}
+ul li a{
+    text-align: center;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: white;
+    transition: 0,3s;
+}
+ul li a:hover{
+    border-radius: 20px;
+    background-color: rgb(64, 184, 35);
+    color: darkgray;
+}
+
+.topo{
+    position: fixed; /* Fixa o cabeçalho no topo */
+    z-index: 1000; /* Mantém sobre outros elementos */
+}
+
+.evento-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 20px 10px; /* Espaço entre linhas e colunas */
+    padding: 20px;
+    margin-inline: 200px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.evento img {
+    margin: 60px;
+    width: 50%;
+    height:fit-content;
+    border-radius: 15px;
+}
+.evento h2{
+    margin: 10px;
+}
+
+.sobre img{
+    margin: 20px;
+    width: 40%;
+    height:fit-content;
+    border-radius: 15px;
+}
+.sobre h1{
+    margin: 20px;
+}
+.sobre h2{
+    margin-top: 0px;
+    margin: 15px;
+    text-align: left;
+}
+.sobre p{
+    margin: 15px;
+    text-align: left;
+}
+
+h2{
+    height: 50px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: rgb(20, 117, 0);
+    font-size: 200%;
+}
+.cursos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    gap: 40px 30px; /* Espaço entre linhas e colunas */
+    padding: 100px;
+    margin-inline: 200px;
+    margin-top: 50px;
+    justify-content: center;
+    box-sizing: border-box;
+} 
+.cursos-container img{
+    border-radius: 40px;
+}
+
+#contato{
+    padding: 20px;
+    text-align: center;
+}
+form h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgbrgb(40, 201, 0) ;
+}
+
+form{
+    background-color: rgba(82, 209, 89, 0.452);
+    margin: auto;
+    padding: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+input, textarea{
+    width: 90%;
+    padding: 15px;
+    border: 1px;
+    border-radius: 30px;
+}
+
+button{
+    width: 40%;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: rgb(40, 201, 0);
+    color: rgb(255, 255, 255);
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(40, 201, 0);
+}
+
+footer p{
+    text-align: center;
+}
